@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture CSS Demo</title>
+    <style>
+      .black-and-white {
+        filter: grayscale(100%);
+        transition: filter 3s ease; /* 添加過渡效果 */
+      }
+      .normal {
+        filter: none; /* 移除灰階濾鏡，恢復彩色 */
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="myImage"
+      class="black-and-white"
+      width="600px"
+      src="https://upload.wikimedia.org/wikipedia/commons/d/df/%E5%A4%A7%E6%99%AF%E7%B8%BD%E5%9C%A8%E5%88%9D%E5%AD%B8%E6%99%82%21_20080801_239_%28cropped%29.jpg"
+      alt="Picture"
+    />
+
+    <script>
+      document.getElementById("myImage").addEventListener("click", function () {
+        this.classList.add("normal");
+      });
+    </script>
+  </body>
+</html>

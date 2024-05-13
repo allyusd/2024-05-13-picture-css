@@ -1,0 +1,11 @@
+{
+  "name": "2024-05-13-picture-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
